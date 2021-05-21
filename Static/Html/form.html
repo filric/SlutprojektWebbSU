@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Beställ</title>
+</head>
+<body>
+   
+    <div class="header">
+        <h1>GNF.com - Get New Family</h1>
+ 
+    </div>
+ 
+    <div class="topnav">
+        <a href="/">Startsida</a>
+        <a href="/form">Beställ</a>
+    </div>
+    <div class="parent2">
+ 
+        <div class="div7">
+ 
+            <form>
+                <div class="container">
+ 
+ 
+                    <h3>Prenumerationstyp</h3>
+ 
+ 
+                    <label class="container">Enskild Relation
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+ 
+                    <label class="container">Skräddarsydd Familjerelation
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+ 
+                    <label class="container">Slumpmässig Familj
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+ 
+ 
+            </form>
+        </div>
+        <div class="div8">
+            <h1>Beställning</h1>
+ 
+            <form action="/form" method="post">
+          
+                <label for="name"><b>Namn:</b></label><br>
+                <input type="text" name="name"><br>
+                <br>
+                <label for="ethnicity"><b>Etnicitet:</b></label><br>
+                <input type="text" name="etnicitet"><br>
+                <br>
+                <label for="religon"><b>Religon:</b></label><br>
+                <input type="text" name="religon"><br>
+                <br>
+                <label for="age"><b>Ålder intervall:</b></label><br>
+                <input type="text" name="age"><br>
+ 
+ 
+            </form>
+ 
+        </div>
+        <div class="div9">
+ 
+            <p>Här kan du skriva in specifikationer <br>
+                om din skräddarsydda relation.</p>
+ 
+            <div class="container2">
+                <form action="/form" method="POST">
+                    <textarea name="message" rows="15" cols="40"></textarea>
+                    <br><br>
+ 
+                </form>
+            </div>
+            <button type="submit">Beställ</button>
+        </div>
+ 
+ 
+    </div>
+    <div class="footer">
+        <h2>Kontaktinformation</h2>
+        <p>Email: getnewfamily@gnf.com | Telefon: 0707070707 | Öppetider För Telefon Är Mån-Fre KL 10-12</p>
+    </div>
+ 
+
+</body>
+</html>
