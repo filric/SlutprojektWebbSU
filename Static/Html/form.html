@@ -22,7 +22,7 @@
  
         <div class="div7">
  
-            <form>
+            <form action="/form" method="post">
                 <div class="container">
  
  
@@ -30,60 +30,47 @@
  
  
                     <label class="container">Enskild Relation
-                        <input type="checkbox">
+                        <input type="checkbox" name="enskild">
                         <span class="checkmark"></span>
                     </label>
  
                     <label class="container">Skräddarsydd Familjerelation
-                        <input type="checkbox">
+                        <input type="checkbox" name="familjerelation">
                         <span class="checkmark"></span>
                     </label>
  
                     <label class="container">Slumpmässig Familj
-                        <input type="checkbox">
+                        <input type="checkbox" name="slump">
                         <span class="checkmark"></span>
                     </label>
                 </div>
  
  
-            </form>
-        </div>
-        <div class="div8">
             <h1>Beställning</h1>
  
-            <form action="/form" method="post">
           
-                <label for="name"><b>Namn:</b></label><br>
+                <label for="name">Namn:</label><br>
                 <input type="text" name="name"><br>
                 <br>
-                <label for="ethnicity"><b>Etnicitet:</b></label><br>
+                <label for="ethnicity">Etnicitet:</label><br>
                 <input type="text" name="etnicitet"><br>
                 <br>
-                <label for="religon"><b>Religon:</b></label><br>
+                <label for="religon">Religon:</label><br>
                 <input type="text" name="religon"><br>
                 <br>
-                <label for="age"><b>Ålder intervall:</b></label><br>
+                <label for="age">Ålder intervall</label><br>
                 <input type="text" name="age"><br>
  
+                <p>Här kan du skriva in specifikationer <br>
+                    om din skräddarsydda relation.</p>
+                <textarea name="message" rows="15" cols="40"></textarea>
+                <br><br>
+
+                <button type="submit">Beställ</button>
  
             </form>
  
         </div>
-        <div class="div9">
- 
-            <p>Här kan du skriva in specifikationer <br>
-                om din skräddarsydda relation.</p>
- 
-            <div class="container2">
-                <form action="/form" method="POST">
-                    <textarea name="message" rows="15" cols="40"></textarea>
-                    <br><br>
- 
-                </form>
-            </div>
-            <button type="submit">Beställ</button>
-        </div>
- 
  
     </div>
     <div class="footer">
