@@ -12,12 +12,35 @@ app.get('/', (req, res) => res.sendFile(staticDir + "Html\\index.html"));
 app.get('/form', (req, res) => res.sendFile(staticDir + "Html\\form.html"));
 
 app.post('/form', function (req, res) {
-    console.log(req.body.slump);
-    if(slump) { // Runs if the box is not undefined
-      output += 'the box WAS checked';
+  let output1 = `The value in the input field was enskild and `;
+    
+  if(req.body.enskild) { // Runs if the box is not undefined
+      output1 += 'the box WAS checked';
    } else {
-      output += 'the box was NOT checked';
+      output1 += 'the box was NOT checked';
    }
+
+   console.log(output1);
+
+  let output2 = `The value in the input field was familjerelation and `;
+    
+  if(req.body.familjerelation) { // Runs if the box is not undefined
+      output2 += 'the box WAS checked';
+   } else {
+      output2 += 'the box was NOT checked';
+   }
+
+   console.log(output2);
+   
+  let output3 = `The value in the input field was slump and `;
+    
+  if(req.body.slump) { // Runs if the box is not undefined
+      output3 += 'the box WAS checked';
+   } else {
+      output3 += 'the box was NOT checked';
+   }
+   console.log(output3);
+
     console.log(req.body.name);
     console.log(req.body.etnicitet);
     console.log(req.body.religon);
