@@ -1,4 +1,6 @@
 const express = require('express');
+const FormModel = require("./FormModel");
+const db = require("./databaseModel");
 const app = express();
 const port = 3000;
 const staticDir = __dirname + "\\static\\";
@@ -46,7 +48,10 @@ app.post('/form', function (req, res) {
     console.log(req.body.religon);
     console.log(req.body.age);
     console.log(req.body.message)
+    FormModel.saveOrder(req.body.name, req.body.etnicitet, req.body.religon, req.body.age, req.body.message, output1, output2, output3);
+  
   res.redirect("/")
 })
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
